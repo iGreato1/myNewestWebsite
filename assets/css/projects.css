@@ -1,0 +1,29 @@
+.html.projects main.mainContent.flex-center {
+    justify-content: flex-start;
+}
+
+.project {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.html.projects .section {
+    margin: unset;
+}
+
+.html.projects .sectionInfo {
+    margin-bottom: 25px;
+}
+
+.html.projects main.mainContent {
+    text-align: unset;
+}
+
+.html.projects .content .resumeContent {
+    margin-bottom: 25px;
+}
+
+.html.projects .content .title {
+    margin-bottom: 10px;
+}

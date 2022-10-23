@@ -1,0 +1,373 @@
+/* ========== Base ========== */
+@media only screen and (max-width: 1200px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+}
+
+
+/* ========== Mobiles Size ========== */
+@media only screen and (max-width: 480px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    /* ========== Variables ========== */
+    :root {
+        /* ========== Neum Shadows ========== */
+        /* Btns */
+        /* Bigest Size */
+        --neumBtn-Bigest-Light: 15px 15px 20px rgb(100 100 100 / 15%), -15px -15px 20px rgb(255 255 255 / 75%);
+        --neumBtn-Bigest-Dark: 15px 15px 25px rgb(3 3 3 / 25%), -15px -15px 25px rgb(125 125 125 / 25%);
+        --neumBtnHover-Bigest-Light: 15px 15px 20px rgb(100 100 100 / 15%) inset, -15px -15px 20px rgb(255 255 255 / 75%) inset;
+        --neumBtnHover-Bigest-Dark: 15px 15px 25px rgb(3 3 3 / 25%) inset, -15px -15px 25px rgb(125 125 125 / 15%) inset;
+
+        /* Big Size */
+        --neumBtn-Big-Light: 15px 15px 15px rgb(100 100 100 / 15%), -15px -15px 15px rgb(255 255 255 / 75%);
+        --neumBtn-Big-Dark: 12.5px 12.5px 25px rgb(3 3 3 / 25%), -12.5px -12.5px 25px rgb(125 125 125 / 25%);
+        --neumBtnHover-Big-Light: 15px 15px 15px rgb(100 100 100 / 15%) inset, -15px -15px 15px rgb(255 255 255 / 75%) inset;
+        --neumBtnHover-Big-Dark: 12.5px 12.5px 25px rgb(3 3 3 / 25%) inset, -12.5px -12.5px 25px rgb(125 125 125 / 25%) inset;
+
+        /* Medium Size */
+        --neumBtn-Medium-Light: 7.5px 7.5px 10px rgb(100 100 100 / 15%), -7.5px -7.5px 10px rgb(255 255 255 / 75%);
+        --neumBtn-Medium-Dark: 7.5px 7.5px 12.5px rgb(3 3 3 / 25%), -7.5px -7.5px 12.5px rgb(125 125 125 / 25%);
+        --neumBtnHover-Medium-Light: 7.5px 7.5px 10px rgb(100 100 100 / 15%) inset, -7.5px -7.5px 10px rgb(255 255 255 / 75%) inset;
+        --neumBtnHover-Medium-Dark: 7.5px 7.5px 10px rgb(3 3 3 / 30%) inset, -7.5px -7.5px 10px rgb(125 125 125 / 15%) inset;
+
+        /* Small Size */
+        --neumBtn-Small-Light: 5px 5px 10px rgb(100 100 100 / 15%), -5px -5px 10px rgb(255 255 255 / 75%);
+        --neumBtn-Small-Dark: 5px 5px 10px rgb(3 3 3 / 30%), -5px -5px 10px rgb(125 125 125 / 20%);
+        --neumBtnHover-Small-Light: 5px 5px 7.5px rgb(100 100 100 / 20%) inset, -5px -5px 7.5px rgb(255 255 255 / 75%) inset;
+        --neumBtnHover-Small-Dark: 5px 5px 7.5px rgb(3 3 3 / 30%) inset, -5px -5px 5px rgb(125 125 125 / 20%) inset;
+
+        /* Home Shape */
+        --neumBtn-homeShape-Light: 20px 20px 50px rgb(100 100 100 / 15%), -20px -20px 50px rgb(255 255 255 / 100%);
+        --neumBtn-homeShape-Dark: 20px 20px 50px #2b2b2b, -20px -20px 50px #3b3b3b;
+
+        /* Footer Icons Size */
+        --neumBtn-footerIcons-Light: 5px 5px 10px rgb(100 100 100 / 15%), -5px -5px 10px rgb(255 255 255 / 75%);
+        --neumBtn-footerIcons-Dark: 5px 5px 10px rgb(3 3 3 / 20%), -5px -5px 15px rgb(200 200 200 / 25%);
+
+        /* Dots Size */
+        --neumBtn-Dots-Light: 5px 5px 10px rgb(100 100 100 / 15%), -2.5px -2.5px 7.5px rgb(255 255 255 / 75%);
+        --neumBtn-Dots-Dark: 5px 5px 10px rgb(3 3 3 / 25%), -2.5px -2.5px 7.5px rgb(125 125 125 / 25%);
+        /* ========== End Neum Shadows ========== */
+
+        /* ========== Fonts Sizes ========== */
+        --title-size: 40px;
+        --subTitle-size: 20px;
+        --biggest-size: 32px;
+        --big-size: 28px;
+        --normal-size: 20px;
+        --small-size: 18px;
+        --smaller-size: 16px;
+        --h2-size: 28px;
+        --h3-size: 26px;
+        --line-height-big: 28px;
+        --line-height-normal: 24px;
+        --line-height-small: 22px;
+        --weight-medium: 400;
+        --weight-semi-bold: 500;
+        --weight-bold: 600;
+        /* ========== End Typography ========== */
+    }
+
+    /* ========== End Variables ========== */
+
+    /* ========== Global Class ========== */
+    /* ========== Main Section Stylling ========== */
+    .section {
+        margin: 25px 0;
+    }
+
+    .section {
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: .5s all ease-in-out;
+    }
+
+    .section.active {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    /* ---------- Section Title ---------- */
+    .sectionInfo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .sectionInfo .title {
+        position: relative;
+        width: fit-content;
+        margin: 15px 0 0;
+        text-transform: uppercase;
+        font-size: var(--h3-size);
+        transition: .5s all ease-in-out;
+    }
+
+    .html.arabic .sectionInfo .title {
+        font-size: var(--biggest-size);
+    }
+
+    .footer .sectionInfo .title {
+        width: 75px;
+    }
+
+    /* -- Section Title Mood -- */
+    .html.light .sectionInfo .title {
+        color: var(--firstTyColorLight);
+    }
+
+    .html.dark .sectionInfo .title {
+        color: var(--firstTyColorDark);
+    }
+
+    /* ---------- Section Title Shape ---------- */
+    .sectionInfo .title div {
+        position: relative;
+        width: 75%;
+        height: 5px;
+        margin: 0 auto;
+        border-radius: 1px;
+        transition: .5s all ease-in-out;
+    }
+
+    .html.arabic .sectionInfo .title div {
+        margin: 3px auto 0;
+        right: 0;
+    }
+
+    .sectionInfo .title div::after {
+        position: absolute;
+        content: '';
+        width: 45%;
+        height: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 1px;
+        transition: .5s all ease-in-out;
+    }
+
+    /* -- Section Title Shape Mood -- */
+    .html.light .sectionInfo .title div {
+        background: var(--shiftColorLight);
+    }
+
+    .html.dark .sectionInfo .title div {
+        background: var(--footerIconsColorDark);
+    }
+
+    .html.light .sectionInfo .title div::after {
+        background: var(--seccondColorLight);
+    }
+
+    .html.dark .sectionInfo .title div::after {
+        background: var(--shift2ColorDark);
+    }
+
+    /* ---------- Section Subtitle ---------- */
+    .sectionInfo .subtitle {
+        margin-top: 25px;
+        transition: .5s all ease-in-out;
+    }
+
+    .html.arabic .sectionInfo .subtitle {
+        margin-top: 15px;
+        font-size: var(--subTitle-size);
+    }
+
+    .html.arabic .footer .sectionInfo .subtitle {
+        font-size: var(--smaller-size);
+    }
+
+    /* -- Section Subtitle Mood -- */
+    .html.light .sectionInfo .subtitle {
+        color: var(--thirdTyColorLight);
+    }
+
+    .html.dark .sectionInfo .subtitle {
+        color: var(--thirdTyColorDark);
+    }
+
+    /* ---------- Section Content ---------- */
+    .sectionContent {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* ========== End Section ========== */
+
+    /* ========== Flex Class ========== */
+    .flex-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ========== End Flex Class ========== */
+
+    .title {
+        text-transform: uppercase;
+        font-size: var(--big-size);
+        color: var(--firstTyColorLight);
+    }
+
+    p.english {
+        font-family: var(--english-font);
+    }
+
+    p.arabic {
+        font-family: var(--arabic-font);
+    }
+
+    .html.english p.english {
+        display: block;
+    }
+
+    .html.english p.arabic {
+        display: none;
+    }
+
+    .html.arabic p.english {
+        display: none;
+    }
+
+    .html.arabic p.arabic {
+        display: block;
+    }
+
+    /* ========== End Global Class ========== */
+
+    /* ========== NAV ========== */
+    .nav {
+        display: none;
+    }
+
+    .nav ul li {
+        width: 275px;
+
+    }
+
+    .nav a {
+        padding: 15px;
+    }
+
+    .nav a.flex-center {
+        justify-content: flex-start;
+    }
+
+    .nav .title,
+    .nav .icon {
+        position: relative;
+    }
+
+    .nav .title {
+        opacity: 1;
+        padding-left: 10px;
+    }
+
+    /* ========== MAIN CONTENT ========== */
+    .mainContent {
+        width: 90%;
+    }
+
+    /* ----- HOME ----- */
+
+    /* ----- ABOUT ----- */
+    .about .sectionContent {
+        flex-direction: column;
+    }
+
+    .about .img {
+        width: 325px;
+        height: 325px;
+    }
+
+    .html.english .about .demoInfo .row.demoInfoTitle {
+        text-align: left;
+    }
+
+    .html.arabic .about .demoInfo .row.demoInfoTitle {
+        text-align: right;
+    }
+
+    .html.arabic .demoInfo .row .answer {
+        font-size: var(--smaller-size);
+    }
+
+    /* ----- SKILLS ----- */
+    .skills .row {
+        width: 90%;
+    }
+
+    /* ----- RESUME ----- */
+    .resume .sectionContent {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+        margin: unset;
+    }
+
+    /* ----- FACTS ----- */
+    .facts .sectionContent {
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .facts .fact {
+        width: 40%;
+    }
+
+    /* ----- SERVECIES ----- */
+    .services .sectionContent {
+        flex-wrap: wrap;
+    }
+
+    .services .service {
+        width: 325px;
+        height: 325px;
+    }
+
+    .service .img {
+        width: 125px;
+        height: 125px;
+    }
+
+    /* ----- PORTFOLIO ----- */
+    .portfolio .controls {
+        gap: 25px;
+    }
+
+    .portfolio .sectionContent .card {
+        width: 300px;
+        box-shadow: var(--neumBtn-Medium-Light);
+    }
+
+    /* ----- FOOTER ----- */
+    .footer .social {
+        gap: 25px;
+    }
+
+    .footer .sectionContent p {
+        text-align: center;
+    }
+}
