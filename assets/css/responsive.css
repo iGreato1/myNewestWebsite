@@ -298,6 +298,7 @@
     .about .img {
         width: 325px;
         height: 325px;
+        margin: 0 auto;
     }
 
     .html.english .about .demoInfo .row.demoInfoTitle {
