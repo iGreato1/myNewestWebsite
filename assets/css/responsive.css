@@ -349,7 +349,9 @@
 
     .nav ul li {
         width: 275px;
+        height: 50px;
         padding: 15px;
+        border-radius: 15px;
     }
 
     .nav a.flex-center {
@@ -366,6 +368,11 @@
         padding-left: 10px;
     }
 
+    .nav .title,
+    .nav #settingsBtn .title {
+        font-size: var(--normal-size);
+    }
+
     /* ----- Settings Btns ----- */
     .nav ul li#settingsBtn.flex-center {
         justify-content: flex-start;
@@ -373,6 +380,7 @@
 
     .nav ul li#settingsBtn.active {
         width: 275px;
+        margin-bottom: 75px;
     }
 
     .nav ul li#settingsBtn .title,
@@ -383,8 +391,7 @@
         right: unset;
         left: unset;
         transform: none;
-        font-size: inherit;
-        text-transform: inherit;
+        text-transform: uppercase;
         opacity: 1;
     }
 
