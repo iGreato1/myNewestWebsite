@@ -501,6 +501,11 @@
         box-shadow: var(--neumBtn-Small-Light);
     }
 
+    .html.english .topArrow {
+        left: unset;
+        right: 25px;
+    }
+
     .html.dark .topArrow {
         box-shadow: var(--neumBtn-Small-Dark);
     }
