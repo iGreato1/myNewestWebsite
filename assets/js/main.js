@@ -116,10 +116,19 @@ function homeTransition() {
 
 }
 function topArrow() {
-    if (window.scrollY > 1750) {
-        topArrowBtn.classList.add('show')
+    if (window.innerWidth < 450) {
+        // console.log('phone')
+        if (window.scrollY > 2750) {
+            topArrowBtn.classList.add('show')
+        } else {
+            topArrowBtn.classList.remove('show')
+        }
     } else {
-        topArrowBtn.classList.remove('show')
+        if (window.scrollY > 1750) {
+            topArrowBtn.classList.add('show')
+        } else {
+            topArrowBtn.classList.remove('show')
+        }
     }
 }
 function reveal() {
@@ -146,6 +155,8 @@ function reveal() {
                     nums.forEach((num) => startCount(num))
                 }
                 factsNumsAnimation = true;
+            } else if (sections[i].classList.contains('portfolio')) {
+                topArrowBtn.classList.remove('show')
             }
         } else {
             sections[i].classList.remove('active');
@@ -187,6 +198,28 @@ window.addEventListener('scroll', () => {
     reveal();
 });
 
+let navMobileBtn = document.getElementById('navMobileBtn')
+function navMobileShow(BTN) {
+    if (BTN.classList.contains('open')) {
+        BTN.classList.remove('open')
+        BTN.classList.add('close')
+        nav.setAttribute('mobile', 'open')
+    } else if (BTN.classList.contains('close')) {
+        BTN.classList.remove('close')
+        BTN.classList.add('open')
+        nav.setAttribute('mobile', 'close')
+    }
+}
+navMobileBtn.addEventListener('click', () => {
+    navMobileShow(navMobileBtn)
+})
+document.querySelectorAll('.nav li').forEach((el) => {
+    el.addEventListener('click', () => {
+        if (el.id !== 'settingsBtn') {
+            navMobileShow(navMobileBtn)
+        }
+    })
+})
 
 // Projects type showen 
 function showProjects() {

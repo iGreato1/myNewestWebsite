@@ -256,16 +256,99 @@
     /* ========== End Global Class ========== */
 
     /* ========== NAV ========== */
-    .nav {
-        display: none;
+    #navMobileBtn {
+        position: fixed;
+        top: 15px;
+        display: block;
+        z-index: 1000;
+    }
+
+    .html.english #navMobileBtn {
+        left: 15px;
+    }
+
+    .html.arabic #navMobileBtn {
+        right: 15px;
+    }
+
+    #navMobileBtn i {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        font-size: var(--normal-size);
+        color: var(--firstTyColorLight);
+        box-shadow: var(--neumBtn-Small-Light);
+        background: var(--footerAndIconsColorLight);
+    }
+
+    #navMobileBtn.close i.close {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    #navMobileBtn.open i.close {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    #navMobileBtn.close i.open {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    #navMobileBtn.open i.open {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .html.dark #navMobileBtn i {
+        color: var(--firstTyColorDark);
+        box-shadow: var(--neumBtn-Small-Dark);
+        background: var(--footerAndIconsColorDark);
+    }
+
+    #navMobileBtn i:hover {
+        box-shadow: var(--neumBtnHover-Small-Light);
+    }
+
+    .html.dark #navMobileBtn i:hover {
+        box-shadow: var(--neumBtnHover-Small-Dark);
+    }
+
+    .nav[mobile='open'] {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        background: var(--mainColorLight);
+        transition: .25s all ease-in-out;
+    }
+
+    .html.arabic .nav[mobile='open'] {
+        justify-content: flex-end;
+    }
+
+    .html.english .nav[mobile='open'] {
+        justify-content: flex-start;
+        right: unset;
+    }
+
+    .nav[mobile='close'] {
+        transform: scale(0);
+        transform-origin: right;
+    }
+
+    .html.dark .nav[mobile='open'] {
+        background: var(--mainColorDark);
     }
 
     .nav ul li {
         width: 275px;
-
-    }
-
-    .nav a {
         padding: 15px;
     }
 
@@ -281,6 +364,40 @@
     .nav .title {
         opacity: 1;
         padding-left: 10px;
+    }
+
+    /* ----- Settings Btns ----- */
+    .nav ul li#settingsBtn.flex-center {
+        justify-content: flex-start;
+    }
+
+    .nav ul li#settingsBtn.active {
+        width: 275px;
+    }
+
+    .nav ul li#settingsBtn .title,
+    .nav ul li#settingsBtn .icon,
+    .nav ul li#settingsBtn.active .title,
+    .nav ul li#settingsBtn.active .icon {
+        position: relative;
+        right: unset;
+        left: unset;
+        transform: none;
+        font-size: inherit;
+        text-transform: inherit;
+        opacity: 1;
+    }
+
+    .nav ul li#languageBtn,
+    .nav ul li#moodBtn {
+        width: 125px;
+    }
+
+    .nav ul li#languageBtn .title,
+    .nav ul li#moodBtn .title,
+    .nav ul li#languageBtn.active .title,
+    .nav ul li#moodBtn.active .title {
+        display: none;
     }
 
     /* ========== MAIN CONTENT ========== */
@@ -363,6 +480,10 @@
         box-shadow: var(--neumBtn-Medium-Light);
     }
 
+    .html.dark .portfolio .sectionContent .card {
+        box-shadow: var(--neumBtn-Medium-Dark);
+    }
+
     /* ----- FOOTER ----- */
     .footer .social {
         gap: 25px;
@@ -370,5 +491,21 @@
 
     .footer .sectionContent p {
         text-align: center;
+    }
+
+    .topArrow {
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+        font-size: var(--normal-size);
+        box-shadow: var(--neumBtn-Small-Light);
+    }
+
+    .html.dark .topArrow {
+        box-shadow: var(--neumBtn-Small-Dark);
+    }
+
+    .topArrow.show {
+        bottom: 125px;
     }
 }
