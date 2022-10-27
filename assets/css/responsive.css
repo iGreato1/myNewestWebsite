@@ -10,11 +10,11 @@
 
 
 /* ========== Mobiles Size ========== */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
 
     html,
     body {
-        overflow-x: hidden;
+        /* overflow-x: hidden !important; */
     }
 
     /* ========== Variables ========== */
@@ -60,9 +60,9 @@
 
         /* ========== Fonts Sizes ========== */
         --title-size: 40px;
-        --subTitle-size: 20px;
-        --biggest-size: 32px;
-        --big-size: 28px;
+        --subTitle-size: 14px;
+        --biggest-size: 28px;
+        --big-size: 22px;
         --normal-size: 20px;
         --small-size: 18px;
         --smaller-size: 16px;
@@ -82,11 +82,12 @@
     /* ========== Global Class ========== */
     /* ========== Main Section Stylling ========== */
     .section {
-        margin: 25px 0;
+        margin: unset;
     }
 
     .section {
         position: relative;
+        padding: 60px 0 0;
         transform: translateY(150px);
         opacity: 0;
         transition: .5s all ease-in-out;
@@ -256,19 +257,96 @@
     /* ========== End Global Class ========== */
 
     /* ========== NAV ========== */
-    #navMobileBtn {
+    .mobileNav {
+        display: block;
         position: fixed;
-        top: 15px;
+        width: 95%;
+        height: 60px;
+        top: 0;
+        z-index: 1000;
+        transition: .5s all ease-in-out;
+        background: var(--mainColorLight);
+    }
+
+    .html.dark .mobileNav {
+        background: var(--mainColorDark);
+    }
+
+    .mobileNavContent {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        transform: translateY(10px);
+        border-radius: 15px;
+        transition: .5s all ease-in-out;
+        box-shadow: var(--neumBtn-Medium-Light);
+        background: var(--mainColorLight);
+    }
+
+    .html.dark .mobileNavContent {
+        box-shadow: var(--neumBtn-Medium-Dark);
+        background: var(--mainColorDark);
+    }
+
+    .logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+    }
+
+    .html.arabic .logo {
+        left: unset;
+        right: 0;
+    }
+
+    .logo img {
+        position: absolute;
+        width: 75%;
+        top: 10px;
+        left: 10px;
+        transition: .5s all ease-in-out;
+    }
+
+    .html.arabic .logo img {
+        left: 5px;
+    }
+
+    .logo img.light {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .logo img.dark {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    .html.dark .logo img.light {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    .html.dark .logo img.dark {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    #navMobileBtn {
+        position: absolute;
+        top: 0;
+        right: 50px;
         display: block;
         z-index: 1000;
     }
 
-    .html.english #navMobileBtn {
-        left: 15px;
-    }
-
     .html.arabic #navMobileBtn {
-        right: 15px;
+        right: unset;
+        left: 50px;
     }
 
     #navMobileBtn i {
@@ -281,8 +359,7 @@
         border-radius: 15px;
         font-size: var(--normal-size);
         color: var(--firstTyColorLight);
-        box-shadow: var(--neumBtn-Small-Light);
-        background: var(--footerAndIconsColorLight);
+        transition: .5s all ease-in-out;
     }
 
     #navMobileBtn.close i.close {
@@ -307,16 +384,6 @@
 
     .html.dark #navMobileBtn i {
         color: var(--firstTyColorDark);
-        box-shadow: var(--neumBtn-Small-Dark);
-        background: var(--footerAndIconsColorDark);
-    }
-
-    #navMobileBtn i:hover {
-        box-shadow: var(--neumBtnHover-Small-Light);
-    }
-
-    .html.dark #navMobileBtn i:hover {
-        box-shadow: var(--neumBtnHover-Small-Dark);
     }
 
     .nav[mobile='open'] {
@@ -330,7 +397,9 @@
     }
 
     .html.arabic .nav[mobile='open'] {
-        justify-content: flex-end;
+        direction: rtl;
+        right: unset;
+        justify-content: flex-start;
     }
 
     .html.english .nav[mobile='open'] {
@@ -348,7 +417,7 @@
     }
 
     .nav ul li {
-        width: 275px;
+        width: 225px;
         height: 50px;
         padding: 15px;
         border-radius: 15px;
@@ -368,6 +437,11 @@
         padding-left: 10px;
     }
 
+    .html.arabic .nav .title {
+        padding-left: unset;
+        padding-right: 10px;
+    }
+
     .nav .title,
     .nav #settingsBtn .title {
         font-size: var(--normal-size);
@@ -379,7 +453,7 @@
     }
 
     .nav ul li#settingsBtn.active {
-        width: 275px;
+        width: 225px;
         margin-bottom: 75px;
     }
 
@@ -397,7 +471,7 @@
 
     .nav ul li#languageBtn,
     .nav ul li#moodBtn {
-        width: 125px;
+        width: 100px;
     }
 
     .nav ul li#languageBtn .title,
@@ -413,16 +487,90 @@
     }
 
     /* ----- HOME ----- */
+    .homeSectionContent {
+        top: 4%;
+        left: -29%;
+        gap: 10% 55%;
+        transform: rotate(90deg);
+    }
+
+    .homeSectionContent .shape {
+        width: 250px;
+        height: 250px;
+        flex-direction: row;
+    }
+
+    @media only screen and (max-width: 379px) {
+        .homeSectionContent {
+            top: -5%;
+        }
+    }
+
+    @media only screen and (min-width: 450px) {
+        .homeSectionContent {
+            top: 13%;
+            left: -28%;
+            gap: 10% 35%;
+        }
+
+        .homeSectionContent .shape {
+            width: 325px;
+            height: 325px;
+        }
+    }
+
+    .homeSectionContent .shape .img,
+    .homeSectionContent .shape .title {
+        transform: rotate(-90deg);
+        text-align: center;
+    }
+
+    .homeSectionContent .shape .img {
+        position: absolute;
+        width: 65%;
+        height: 65%;
+        top: 17%;
+        left: 11%;
+        transform: rotate(-90deg) scale(1.5);
+    }
+
+    .homeSectionContent .shape:nth-child(2) .img img,
+    .homeSectionContent .shape:nth-child(3) .img img {
+        display: none;
+    }
+
+    .homeSectionContent .shape:nth-child(1) .img img {
+        filter: none;
+    }
 
     /* ----- ABOUT ----- */
+    .about .sectionInfo {
+        margin-bottom: 35px;
+    }
+
     .about .sectionContent {
         flex-direction: column;
+        gap: 40px;
     }
 
     .about .img {
-        width: 325px;
-        height: 325px;
+        width: 300px;
+        height: 300px;
         margin: 0 auto;
+    }
+
+    @media only screen and (min-width: 760px) {
+        .about .sectionContent {
+            flex-direction: row;
+        }
+
+        .about .demoInfo {
+            width: 50%;
+        }
+    }
+
+    .about .demoInfo .row.demoInfoTitle {
+        margin-bottom: 25px;
     }
 
     .html.english .about .demoInfo .row.demoInfoTitle {
@@ -433,8 +581,18 @@
         text-align: right;
     }
 
+    .demoInfo .row .subject {
+        font-size: var(--small-size);
+    }
+
     .html.arabic .demoInfo .row .answer {
         font-size: var(--smaller-size);
+    }
+
+    @media only screen and (max-width: 380px) {
+        .html.arabic .demoInfo .row .answer {
+            font-size: 14px;
+        }
     }
 
     /* ----- SKILLS ----- */
@@ -450,6 +608,32 @@
     .column {
         width: 100%;
         margin: unset;
+    }
+
+    .resume .content {
+        padding: 0 0 0 15px;
+    }
+
+    .html.arabic .resume .content {
+        padding: 0 15px 0 0;
+    }
+
+    .resume .content::before {
+        top: 5px;
+        left: -3.5px;
+    }
+
+    .html.arabic .resume .content::before {
+        right: -3.5px;
+    }
+
+    .resume .content .title::before {
+        left: -30px;
+    }
+
+    .html.arabic .resume .content .title::before {
+        top: 3px;
+        right: -30px;
     }
 
     /* ----- FACTS ----- */
@@ -479,11 +663,12 @@
 
     /* ----- PORTFOLIO ----- */
     .portfolio .controls {
-        gap: 25px;
+        gap: 20px;
     }
 
     .portfolio .sectionContent .card {
         width: 300px;
+        height: 151px;
         box-shadow: var(--neumBtn-Medium-Light);
     }
 
@@ -498,6 +683,7 @@
 
     .footer .sectionContent p {
         text-align: center;
+        line-height: var(--line-height-normal);
     }
 
     .topArrow {

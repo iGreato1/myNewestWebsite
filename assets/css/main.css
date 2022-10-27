@@ -439,7 +439,7 @@ body {
 }
 
 /* ========== NAV ========== */
-#navMobileBtn {
+.mobileNav {
     display: none;
 }
 
@@ -581,7 +581,7 @@ html.dark .nav ul li {
 .nav ul li#languageBtn,
 .nav ul li#moodBtn {
     position: absolute;
-    transition-delay: .4s;
+    /* transition-delay: .4s; */
     /* z-index: -1; */
 }
 
@@ -662,9 +662,8 @@ html.dark .nav ul li {
 
 .homeSectionContent .shape .img {
     position: relative;
-    width: 225px;
-    height: 225px;
-    margin: 25px 0 15px;
+    width: 90%;
+    height: 90%;
 }
 
 /* .homeSectionContent .shape:nth-child(1) .img {
@@ -673,8 +672,8 @@ html.dark .nav ul li {
     height: 100%;
 } */
 
-.homeSectionContent .shape:nth-child(1) .img.flex-center {
-    align-items: flex-end;
+.homeSectionContent .shape:nth-child(1) .img img {
+    filter: drop-shadow(0 0 3px rgba(33, 33, 33, .2));
 }
 
 .homeSectionContent .shape .img img {
@@ -684,10 +683,25 @@ html.dark .nav ul li {
     transition: .5s all ease-in-out;
 }
 
+.homeSectionContent .shape:nth-child(2) .img img,
+.homeSectionContent .shape:nth-child(3) .img img {
+    width: 70%;
+    top: -7%;
+}
+
+.homeSectionContent .shape:nth-child(3) .img img {
+    left: 20%;
+}
+
 .html.light .homeSectionContent .shape .img img.light {
     transform: scale(1);
     opacity: 1;
     z-index: 1;
+}
+
+.html.light .homeSectionContent .shape:nth-child(2) .img img.light,
+.html.light .homeSectionContent .shape:nth-child(3) .img img.light {
+    opacity: .8;
 }
 
 .html.light .homeSectionContent .shape .img img.dark {
@@ -706,6 +720,11 @@ html.dark .nav ul li {
     transform: scale(1);
     opacity: 1;
     z-index: 1;
+}
+
+.html.dark .homeSectionContent .shape:nth-child(2) .img img.light,
+.html.dark .homeSectionContent .shape:nth-child(3) .img img.light {
+    opacity: .8;
 }
 
 .homeSectionContent .shape .title {
@@ -1085,11 +1104,13 @@ html.dark .nav ul li {
 
 .html.light .resume .content .title::before {
     border: 1px solid var(--seccondColorLight);
+    box-shadow: var(--neumBtn-Dots-Light);
     background: var(--mainColorLight);
 }
 
 .html.dark .resume .content .title::before {
     border: 1px solid var(--seccondColorDark);
+    box-shadow: var(--neumBtn-Dots-Dark);
     background: var(--mainColorDark);
 }
 

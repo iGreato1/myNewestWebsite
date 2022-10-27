@@ -46,9 +46,19 @@
 </head>
 
 <body class="body flex-center flex-column">
-    <div class="open" id="navMobileBtn">
-        <i class="fa fa-bars open" aria-hidden="true"></i>
-        <i class="fa fa-times close" aria-hidden="true"></i>
+    <div class="mobileNav">
+        <div class="mobileNavContent">
+            <div class="logo">
+                <a href="#home">
+                    <img src="./assets/imgs/myLogoLetterLight.svg" class="light" alt="">
+                    <img src="./assets/imgs/myLogoLetterDark.svg" class="dark" alt="">
+                </a>
+            </div>
+            <div class="open" id="navMobileBtn">
+                <i class="fa fa-bars open" aria-hidden="true"></i>
+                <i class="fa fa-times close" aria-hidden="true"></i>
+            </div>
+        </div>
     </div>
     <div class="nav" mobile="close">
         <ul>
@@ -57,7 +67,10 @@
                     <div class="icon">
                         <ion-icon name="home-outline"></ion-icon>
                     </div>
-                    <div class="title">Home</div>
+                    <div class="title">
+                        <p class="english">Home</p>
+                        <p class="arabic">الرئيسية</p>
+                    </div>
                 </a>
             </li>
             <li class="flex-center">
@@ -65,7 +78,10 @@
                     <div class="icon">
                         <ion-icon name="person-outline"></ion-icon>
                     </div>
-                    <div class="title">About</div>
+                    <div class="title">
+                        <p class="english">About</p>
+                        <p class="arabic">من انا</p>
+                    </div>
                 </a>
             </li>
             <li class="flex-center">
@@ -73,7 +89,10 @@
                     <div class="icon">
                         <ion-icon name="reader-outline"></ion-icon>
                     </div>
-                    <div class="title">Resume</div>
+                    <div class="title">
+                        <p class="english">Resume</p>
+                        <p class="arabic">ملخص عام</p>
+                    </div>
                 </a>
             </li>
             <li class="flex-center">
@@ -81,7 +100,10 @@
                     <div class="icon">
                         <ion-icon name="medal-outline"></ion-icon>
                     </div>
-                    <div class="title">Facts</div>
+                    <div class="title">
+                        <p class="english">Facts</p>
+                        <p class="arabic">احصائياتي</p>
+                    </div>
                 </a>
             </li>
             <li class="flex-center">
@@ -89,7 +111,10 @@
                     <div class="icon">
                         <ion-icon name="grid-outline"></ion-icon>
                     </div>
-                    <div class="title">Services</div>
+                    <div class="title">
+                        <p class="english">Services</p>
+                        <p class="arabic">خدماتي</p>
+                    </div>
                 </a>
             </li>
             </li>
@@ -98,7 +123,10 @@
                     <div class="icon">
                         <ion-icon name="images-outline"></ion-icon>
                     </div>
-                    <div class="title">Portfolio</div>
+                    <div class="title">
+                        <p class="english">Portfolio</p>
+                        <p class="arabic">ملف اعمالي</p>
+                    </div>
                 </a>
             </li>
             <li class="flex-center" id="settingsBtn">
@@ -106,20 +134,27 @@
                     <ion-icon name="settings-outline"></ion-icon>
                 </div>
                 <div class="title">
-                    <p>Settings</p>
+                    <p class="english">Settings</p>
+                    <p class="arabic">الاعدادات</p>
                 </div>
             </li>
             <li class="flex-center" id="languageBtn">
                 <div class="icon">
                     <ion-icon name="language-outline"></ion-icon>
                 </div>
-                <div class="title">Language</div>
+                <div class="title">
+                    <p class="english">Language</p>
+                    <p class="arabic">اللغة</p>
+                </div>
             </li>
             <li class="flex-center" id="moodBtn">
                 <div class="icon">
                     <ion-icon name="moon-outline"></ion-icon>
                 </div>
-                <div class="title">Mood</div>
+                <div class="title">
+                    <p class="english">Mood</p>
+                    <p class="arabic">المظهر</p>
+                </div>
             </li>
         </ul>
     </div>
@@ -127,10 +162,9 @@
         <div class="homeSectionContent">
             <div class="shape shape1 flex-center flex-column">
                 <div class="img homeImg flex-center">
-                    <img src="./assets/imgs/home1Light.png" alt="" class="light">
-                    <img src="./assets/imgs/home1Dark.png" alt="" class="dark">
+                    <img src="./assets/imgs/myLogoLight.svg" alt="" class="light">
+                    <img src="./assets/imgs/myLogoDark.svg" alt="" class="dark">
                 </div>
-                <div class="title homeTitle">Abdullah Alqahtani</div>
                 <div class="shapeBG"></div>
             </div>
             <div class="shape shape2 flex-center flex-column">
@@ -138,7 +172,6 @@
                     <img src="./assets/imgs/UiSvgLight.svg" alt="" class="light">
                     <img src="./assets/imgs/UiSvgDark.svg" alt="" class="dark">
                 </div>
-                <div class="title homeTitle">UI-UX Designer</div>
                 <div class="shapeBG"></div>
             </div>
             <div class="shape shape3 flex-center flex-column">
@@ -146,7 +179,6 @@
                     <img src="./assets/imgs/frontEndSvgLight.svg" alt="" class="light">
                     <img src="./assets/imgs/frontEndSvgDark.svg" alt="" class="dark">
                 </div>
-                <div class="title homeTitle">Front-End Developer</div>
                 <div class="shapeBG"></div>
             </div>
         </div>
