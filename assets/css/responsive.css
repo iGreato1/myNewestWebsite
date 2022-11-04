@@ -10,7 +10,7 @@
 
 
 /* ========== Mobiles Size ========== */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
 
     html,
     body {
@@ -59,15 +59,16 @@
         /* ========== End Neum Shadows ========== */
 
         /* ========== Fonts Sizes ========== */
-        --title-size: 40px;
+        --title-size: 32px;
         --subTitle-size: 14px;
-        --biggest-size: 28px;
-        --big-size: 22px;
-        --normal-size: 20px;
-        --small-size: 18px;
-        --smaller-size: 16px;
+        --super-big-size: 26px;
+        --bigger-size: 22px;
+        --big-size: 20px;
+        --normal-size: 18px;
+        --small-size: 16px;
+        --smaller-size: 14px;
         --h2-size: 28px;
-        --h3-size: 26px;
+        --h3-size: 24px;
         --line-height-big: 28px;
         --line-height-normal: 24px;
         --line-height-small: 22px;
@@ -342,6 +343,7 @@
         right: 50px;
         display: block;
         z-index: 1000;
+        cursor: pointer;
     }
 
     .html.arabic #navMobileBtn {
@@ -487,11 +489,73 @@
     }
 
     /* ----- HOME ----- */
+    @media only screen and (max-width: 550px) {
+        .homeSectionContent {
+            /* transform: rotate(90deg); */
+        }
+    }
+
     .homeSectionContent {
-        top: 4%;
-        left: -29%;
-        gap: 10% 55%;
-        transform: rotate(90deg);
+        top: 37%;
+        left: 9%;
+        gap: 15% 50%;
+    }
+
+    @media only screen and (min-width: 410px) {
+        .homeSectionContent {
+            left: 13%;
+        }
+    }
+
+    @media only screen and (min-width: 525px) {
+        .homeSectionContent {
+            left: 15%;
+        }
+    }
+
+    @media only screen and (min-width: 575px) {
+        .homeSectionContent {
+            left: 22%;
+        }
+    }
+
+    @media only screen and (min-width: 625px) {
+        .homeSectionContent {
+            left: 27%;
+        }
+    }
+
+    @media only screen and (min-width: 750px) {
+        .homeSectionContent {
+            left: 35%;
+            gap: 10% 40%;
+        }
+    }
+
+    @media only screen and (min-width: 810px) {
+        .homeSectionContent {
+            top: 47%;
+            left: 38%;
+        }
+    }
+
+    @media only screen and (min-width: 810px) {
+        .homeSectionContent {
+            top: 47%;
+            left: 38%;
+        }
+    }
+
+    @media only screen and (min-width: 910px) {
+        .homeSectionContent {
+            left: 42%;
+        }
+    }
+
+    @media only screen and (min-width: 1010px) {
+        .homeSectionContent {
+            left: 47%;
+        }
     }
 
     .homeSectionContent .shape {
@@ -500,19 +564,7 @@
         flex-direction: row;
     }
 
-    @media only screen and (max-width: 379px) {
-        .homeSectionContent {
-            top: -5%;
-        }
-    }
-
     @media only screen and (min-width: 450px) {
-        .homeSectionContent {
-            top: 13%;
-            left: -28%;
-            gap: 10% 35%;
-        }
-
         .homeSectionContent .shape {
             width: 325px;
             height: 325px;
@@ -521,7 +573,6 @@
 
     .homeSectionContent .shape .img,
     .homeSectionContent .shape .title {
-        transform: rotate(-90deg);
         text-align: center;
     }
 
@@ -529,14 +580,16 @@
         position: absolute;
         width: 65%;
         height: 65%;
-        top: 17%;
-        left: 11%;
-        transform: rotate(-90deg) scale(1.5);
+        top: 12%;
+        left: 17%;
+        transform: scale(1.5);
     }
 
     .homeSectionContent .shape:nth-child(2) .img img,
     .homeSectionContent .shape:nth-child(3) .img img {
-        display: none;
+        /* display: none; */
+        width: 50%;
+        height: 50%;
     }
 
     .homeSectionContent .shape:nth-child(1) .img img {
@@ -573,14 +626,6 @@
         margin-bottom: 25px;
     }
 
-    .html.english .about .demoInfo .row.demoInfoTitle {
-        text-align: left;
-    }
-
-    .html.arabic .about .demoInfo .row.demoInfoTitle {
-        text-align: right;
-    }
-
     .demoInfo .row .subject {
         font-size: var(--small-size);
     }
@@ -610,30 +655,16 @@
         margin: unset;
     }
 
-    .resume .content {
-        padding: 0 0 0 15px;
-    }
-
-    .html.arabic .resume .content {
-        padding: 0 15px 0 0;
-    }
-
     .resume .content::before {
         top: 5px;
-        left: -3.5px;
-    }
-
-    .html.arabic .resume .content::before {
-        right: -3.5px;
-    }
-
-    .resume .content .title::before {
-        left: -30px;
     }
 
     .html.arabic .resume .content .title::before {
         top: 3px;
-        right: -30px;
+    }
+
+    .content .resumeContent {
+        font-size: var(--small-size);
     }
 
     /* ----- FACTS ----- */
