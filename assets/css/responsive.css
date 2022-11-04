@@ -118,7 +118,7 @@
     }
 
     .html.arabic .sectionInfo .title {
-        font-size: var(--biggest-size);
+        font-size: var(--bigger-size);
     }
 
     .footer .sectionInfo .title {
