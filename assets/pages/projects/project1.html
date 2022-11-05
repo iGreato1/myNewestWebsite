@@ -34,6 +34,7 @@
     <!-- Css Files -->
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../css/projects.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
     <!-- <link rel="stylesheet" href="../../css/desktops.css">
     <link rel="stylesheet" href="../../css/laptops.css">
     <link rel="stylesheet" href="../../css/taplates.css">
@@ -46,7 +47,21 @@
 </head>
 
 <body class="body flex-center flex-column">
-    <nav class="nav">
+    <div class="mobileNav">
+        <div class="mobileNavContent">
+            <div class="logo">
+                <a href="#home">
+                    <img src="../../imgs/myLogoLetterLight.svg" class="light" alt="">
+                    <img src="../../imgs/myLogoLetterDark.svg" class="dark" alt="">
+                </a>
+            </div>
+            <div class="open" id="navMobileBtn">
+                <i class="fa fa-bars open" aria-hidden="true"></i>
+                <i class="fa fa-times close" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <div class="nav" mobile="close">
         <ul>
             <li class="flex-center">
                 <a href="../../../index.html" class="flex-center">
@@ -118,9 +133,9 @@
                 <div class="title">Mood</div>
             </li>
         </ul>
-    </nav>
-    <main class="mainContent flex-center flex-column">
-        <section class="section project" id="project">
+    </div>
+    <div class="mainContent flex-center flex-column">
+        <div class="section project" id="project">
             <script>
                 let temp = setTimeout(() => {
                     document.querySelector('#project').classList.add('active')
@@ -189,7 +204,7 @@
                                     Cyber Security, Programming and Drones</p>
                                 <p class="arabic">
                                     إيجاد نظام تنقل مريح للمستخدم بداخل الموقع وذلك عبر ابتكار 3 طرق رئيسية للتنقل داخل
-                                    الموقع <br>
+                                    الموقع :<br>
                                     - التنقل عبر الناف بار <br>
                                     - التنقل عبر السكرولينق ( النزول بالماوس ) <br>
                                     - التنقل عبر الاسهم المتواجدة برأس كل صفحة في الموقع
@@ -216,39 +231,86 @@
                         <p class="arabic">التقنيات المستخدمة :</p>
                     </div>
                     <div class="resumeContent">
-                        <ul>
+                        <ul class="flex">
                             <li class="topDot">
-                                <p class="english"><a href="https://satr.codes/list/courses" class="fontBold">Sater
-                                        platform</a> belonging to Saudi Federation for
-                                    Cyber Security, Programming and Drones</p>
-                                <p class="arabic">
-                                    مرحلة التصميم : <br>
-                                    - <span class="english fontBold">ADOBE XD</span> <br>
-                                    - <span class="english fontBold">ADOBE PHOTOSHOP</span> <br>
-                                    - <span class="english fontBold">ADOBE ILLUSTRATOR</span>
-                                </p>
+                                <p class="english"></p>
+                                <p class="arabic">مرحلة التصميم :</p>
+                                <div class="subContent">
+                                    - <span class="english fontBold shape">ADOBE XD</span> <br>
+                                    - <span class="english fontBold shape">ADOBE PHOTOSHOP</span> <br>
+                                    - <span class="english fontBold shape">ADOBE ILLUSTRATOR</span>
+                                </div>
                             </li>
                             <li class="topDot">
-                                <p class="english"><a href="https://satr.codes/list/courses" class="fontBold">Sater
-                                        platform</a> belonging to Saudi Federation for
-                                    Cyber Security, Programming and Drones</p>
-                                <p class="arabic">
-                                    مرحلة البرمجة : <br>
-                                    - <span class="english fontBold">HTML</span> <br>
-                                    - <span class="english fontBold">CSS</span> <br>
-                                    - <span class="english fontBold">JAVASCRIPT</span>
-                                </p>
+                                <p class="english"></p>
+                                <p class="arabic">مرحلة البرمجة :</p>
+                                <div class="subContent">
+                                    - <span class="english fontBold shape">HTML5</span> <br>
+                                    - <span class="english fontBold shape">CSS3</span> <br>
+                                    - <span class="english fontBold shape">JAVASCRIPT</span>
+                                </div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-    <a href="../../../index.html#home" class="topArrow flex-center">
-        <i class="fa fa-arrow-up" aria-hidden="true"></i>
-    </a>
-    <section class="footer" id="footer">
+            <div class="content">
+                <div class="title">
+                    <p class="english">Project Owner :</p>
+                    <p class="arabic">صاحب المشروع :</p>
+                </div>
+                <div class="resumeContent projectOwner">
+                    <div class="personalInfo">
+                        <div class="icon">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </div>
+                        <p class="english"></p>
+                        <p class="arabic">عبدالعزيز الداعوك :</p>
+                    </div>
+                    <div class="subContent">
+                        <div class="social flex-center">
+                            <a href="https://www.linkedin.com/in/abdulaziz-aldawk-199907132" target="_blank"
+                                class="icon Neum flex-center linkedin">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/ImLegend4658" target="_blank"
+                                class="icon Neum flex-center github">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="title">
+                    <p class="english">Project Links :</p>
+                    <p class="arabic">روابط المشروع :</p>
+                </div>
+                <div class="resumeContent">
+                    <div class="social flex-center">
+                        <a href="https://eqla3tech.com/" target="_blank" class="icon Neum flex-center github">
+                            <i class="fa fa-link" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/iGreato1/Eqla3Tech" target="_blank"
+                            class="icon Neum flex-center github">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                        <!-- <a href="https://www.behance.net/AbdullahAlqahtani1" target="_blank"
+                                class="icon Neum flex-center behance">
+                                <i class="fa fa-behance" aria-hidden="true"></i> -->
+                        </a>
+                        <a href="https://twitter.com/MrLegend2000/status/1484527844336324610?s=20&t=Gv2LNZbF3yPM-HPAWXdBCg"
+                            target="_blank" class="icon Neum flex-center twitter">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="footer" id="footer">
         <div class="sectionInfo">
             <div class="title">
                 <p></p>
@@ -281,7 +343,7 @@
             <p>Copyright 2022 &copy; All Rights Reserved | Designed By <a
                     href="../../../index.html#about">Abdullah-Alqahtani.me</a></p>
         </div>
-    </section>
+    </div>
 
     <!-- iCons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

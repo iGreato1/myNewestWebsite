@@ -2,6 +2,10 @@
     justify-content: flex-start;
 }
 
+.mainContent {
+    text-align: unset;
+}
+
 .project {
     position: relative;
     width: 100%;
@@ -24,6 +28,58 @@
     margin-bottom: 25px;
 }
 
+.html.projects .content .resumeContent .personalInfo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.html.projects .content .resumeContent .personalInfo .icon {
+    font-size: var(--normal-size);
+}
+
+.html.projects .content .resumeContent.projectOwner .social.flex-center {}
+
+.html.projects .content .resumeContent .flex {
+    display: flex;
+    gap: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+    .html.projects .content .resumeContent .flex {
+        display: flex;
+        flex-direction: column;
+        gap: 0%;
+    }
+}
+
+.html.projects .content .resumeContent .flex .subContent {
+    margin: 15px 0;
+}
+
 .html.projects .content .title {
     margin-bottom: 10px;
+}
+
+.html.projects .content .resumeContent .shape {
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 55px;
+}
+
+.html.light.projects .content .resumeContent .shape {
+    box-shadow: var(--neumBtn-Small-Light);
+    background: var(--footerAndIconsColorLight);
+}
+
+.html.dark.projects .content .resumeContent .shape {
+    box-shadow: var(--neumBtn-Small-Dark);
+    background: var(--footerAndIconsColorDark);
+}
+
+.html.projects .resumeContent .social {
+    width: 100%;
+    margin: 15px 0;
+    gap: 15px;
+    justify-content: flex-start;
 }

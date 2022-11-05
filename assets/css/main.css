@@ -293,6 +293,10 @@
     color: var(--firstTyColorLight);
 }
 
+.html.dark .title {
+    color: var(--firstTyColorDark);
+}
+
 p.english {
     font-family: var(--english-font);
 }
@@ -658,7 +662,6 @@ html.dark .nav ul li {
 
 @media only screen and (min-width: 1024px) and (max-width: 1700px) {
     .homeSectionContent {
-        top: 20%;
         left: 35%;
         gap: 5% 35%;
     }
@@ -671,23 +674,18 @@ html.dark .nav ul li {
 
 @media only screen and (min-width: 1124px) and (max-width: 1224px) {
     .homeSectionContent {
-        top: 20%;
         left: 40%;
-        gap: 5% 35%;
     }
 }
 
 @media only screen and (min-width: 1224px) and (max-width: 1424px) {
     .homeSectionContent {
-        top: 20%;
         left: 43%;
-        gap: 5% 35%;
     }
 }
 
 @media only screen and (min-width: 1424px) {
     .homeSectionContent {
-        top: 20%;
         left: 50%;
         gap: 5% 20%;
     }
@@ -1630,7 +1628,7 @@ html.dark .nav ul li {
     margin-bottom: 30px;
 }
 
-.footer .social a {
+.social a {
     width: 50px;
     height: 50px;
     border-radius: 12.5px;
@@ -1640,56 +1638,56 @@ html.dark .nav ul li {
     transition: .5s all ease-in-out;
 }
 
-.footer .social a i {
+.social a i {
     cursor: pointer;
 }
 
-.footer .social a:hover {
+.social a:hover {
     transform: scale(1.1);
     font-size: 28px;
 }
 
-.html.light .footer .social a {
+.html.light .social a {
     color: var(--firstTyColorLight);
     background: var(--footerIconsColorLight);
     box-shadow: var(--neumBtn-footerIcons-Light);
 }
 
-.html.dark .footer .social a {
+.html.dark .social a {
     color: var(--firstTyColorDark);
     background: var(--footerIconsColorDark);
     box-shadow: var(--neumBtn-footerIcons-Dark);
 }
 
-.html.light .footer .social a:hover {
+.html.light .social a:hover {
     box-shadow: none;
 }
 
-.html.dark .footer .social a:hover {
+.html.dark .social a:hover {
     box-shadow: none;
 }
 
-.footer .social a.linkedin:hover {
+.social a.linkedin:hover {
     background: #0072b1;
     color: var(--mainColorLight);
 }
 
-.footer .social a.github:hover {
+.social a.github:hover {
     background: #171515;
     color: var(--mainColorLight);
 }
 
-.footer .social a.whatsapp:hover {
+.social a.whatsapp:hover {
     background: #25D366;
     color: var(--mainColorLight);
 }
 
-.footer .social a.twitter:hover {
+.social a.twitter:hover {
     background: #00acee;
     color: var(--mainColorLight);
 }
 
-.footer .social a.behance:hover {
+.social a.behance:hover {
     background: #053eff;
     color: var(--mainColorLight);
 }
