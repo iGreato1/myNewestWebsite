@@ -161,9 +161,15 @@
     <div class="mainShape" dir="ltr">
         <div class="homeSectionContent">
             <div class="shape shape1 flex-center flex-column">
-                <div class="img homeImg flex-center">
-                    <img src="./assets/imgs/myLogoLight.svg" alt="" class="light">
-                    <img src="./assets/imgs/myLogoDark.svg" alt="" class="dark">
+                <div class="infoContainer">
+                    <div class="img homeImg flex-center">
+                        <img src="./assets/imgs/myLogoLetterLight.svg" alt="" class="light">
+                        <img src="./assets/imgs/myLogoLetterDark.svg" alt="" class="dark">
+                    </div>
+                    <div class="homeInfo">
+                        <p>Abdullah Alqahtani</p>
+                        <span class="type"></span>
+                    </div>
                 </div>
                 <div class="shapeBG"></div>
             </div>
@@ -822,6 +828,18 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/typed.js"></script>
+    <script>
+        var typed = new Typed('.type', {
+            strings: [
+                'Front-End Developer',
+                'UI-UX Designer'
+            ],
+            typeSpeed: 60,
+            backSpeed: 60,
+            loop: true
+        });
+    </script>
 </body>
 
 </html>

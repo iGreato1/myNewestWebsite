@@ -571,25 +571,13 @@
         }
     }
 
+    .homeSectionContent .shape1 .infoContainer {
+        transform: translate(4px, 5px);
+    }
+
     .homeSectionContent .shape .img,
     .homeSectionContent .shape .title {
         text-align: center;
-    }
-
-    .homeSectionContent .shape .img {
-        position: absolute;
-        width: 65%;
-        height: 65%;
-        top: 12%;
-        left: 17%;
-        transform: scale(1.5);
-    }
-
-    .homeSectionContent .shape:nth-child(2) .img img,
-    .homeSectionContent .shape:nth-child(3) .img img {
-        /* display: none; */
-        width: 50%;
-        height: 50%;
     }
 
     .homeSectionContent .shape:nth-child(1) .img img {
