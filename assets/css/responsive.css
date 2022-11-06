@@ -584,6 +584,15 @@
         filter: none;
     }
 
+    .homeSectionContent .shape .homeInfo {
+        font-size: var(--bigger-size);
+        line-height: 25px;
+    }
+
+    .homeSectionContent .shape .homeInfo span {
+        font-size: var(--small-size);
+    }
+
     /* ----- ABOUT ----- */
     .about .sectionInfo {
         margin-bottom: 35px;
