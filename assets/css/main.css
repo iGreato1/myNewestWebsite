@@ -4,6 +4,8 @@
 /* Arabic */
 /* @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600&display=swap'); */
 
 
 /* Here website fonts */
@@ -15,19 +17,21 @@
 }
 
 /* Arabic Font */
-/* Main Font */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+
+/* Main Font
 @font-face {
     font-family: 'arabicFont';
     src: url('../fonts/ElMessiri-VariableFont_wght.ttf');
-    font-style: normal
-}
+    font-style: normal;
+} */
 
 /* Second Font */
-@font-face {
+/* @font-face {
     font-family: 'arabic2Font';
     src: url('../fonts/BalooBhaijaan2-VariableFont_wght.ttf');
     font-style: normal
-}
+} */
 
 
 /* ========== Variables ========== */
@@ -97,6 +101,11 @@
 
 
     /* ========== Typography ========== */
+    /* Fonts Familyes */
+    --arabic-font: 'Tajawal', sans-serif;
+    --arabic-font2: 'arabic2Font';
+    --english-font: 'englishFont';
+
     /* Colors : */
     /* Light Mood */
     --firstTyColorLight: #666666;
@@ -120,18 +129,22 @@
     --smaller-size: 16px;
     --h2-size: 32px;
     --h3-size: 26px;
-    --line-height-big: 28px;
-    --line-height-normal: 24px;
-    --line-height-small: 22px;
+
+    /* Font Weight */
+    /* --super-big-weight: 800;
+    --bigger-weight: 700;
+    --big-weight: 500;
+    --normal-weight: 400;
+    --small-weight: 300;
+    --smaller-weight: 200; */
     --weight-medium: 400;
     --weight-semi-bold: 500;
     --weight-bold: 600;
 
-    /* Familyes */
-    /* Fonts Familyes */
-    --arabic-font: 'arabicFont';
-    --arabic-font2: 'arabic2Font';
-    --english-font: 'englishFont';
+    /* Line Height */
+    --line-height-big: 28px;
+    --line-height-normal: 24px;
+    --line-height-small: 22px;
     /* ========== End Typography ========== */
 }
 
@@ -144,14 +157,14 @@
     margin: 25px 0;
 }
 
-.section {
+.reveal {
     position: relative;
     transform: translateY(150px);
     opacity: 0;
     transition: .5s all ease-in-out;
 }
 
-.section.active {
+.reveal.active {
     transform: translateY(0px);
     opacity: 1;
 }
@@ -1448,9 +1461,9 @@ html.dark .nav ul li {
 }
 
 .service .title {
-    margin: 15px 0 25px;
+    margin: 25px 0 15px;
     font-size: var(--normal-size);
-    font-weight: var(--weight-bold);
+    font-weight: var(--weight-semi-bold);
     cursor: pointer;
     transition: .5s all ease-in-out;
 }
@@ -1465,7 +1478,7 @@ html.dark .nav ul li {
 
 .service .description {
     font-size: var(--small-size);
-    font-weight: var(--weight-semi-bold);
+    font-weight: var(--weight-medium);
     line-height: var(--line-height-normal);
     cursor: pointer;
     transition: .5s all ease-in-out;
@@ -1477,6 +1490,14 @@ html.dark .nav ul li {
 
 .html.dark .services .description {
     color: var(--thirdTyColorDark);
+}
+
+.services .servicesMsg {
+    margin: 50px auto 0;
+}
+
+.services .servicesMsg .social a {
+    margin: 10px;
 }
 
 /* ----- PORTFOLIO ----- */
@@ -1611,6 +1632,29 @@ html.dark .nav ul li {
     margin-bottom: 7.5px;
 }
 
+.portfolio .sectionContent .card .details .projectInfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.details .projectInfo span {
+    padding: 5px 10px;
+    border: 1px solid var(--mainColorLight);
+    border-radius: 5px;
+}
+
+.details .projectInfo span.active {
+    background: rgba(255, 255, 255, .3);
+}
+
+.details .projectInfo span:nth-child(1) {
+    margin: 0 5px;
+}
+
+/* .html.dark .details .projectInfo span {
+    border: 1px solid var(--mainColordark);
+} */
 
 /* ----- Footer ----- */
 .footer {

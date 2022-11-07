@@ -704,6 +704,10 @@
         box-shadow: var(--neumBtn-Medium-Dark);
     }
 
+    .portfolio .sectionContent .card .details .projectInfo {
+        font-size: 12px;
+    }
+
     /* ----- FOOTER ----- */
     .footer .social {
         gap: 25px;

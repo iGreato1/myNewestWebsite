@@ -132,7 +132,7 @@ function topArrow() {
     }
 }
 function reveal() {
-    let sections = document.querySelectorAll('.section')
+    let sections = document.querySelectorAll('.reveal')
     for (let i = 0; i < sections.length; i++) {
         let windowHeight = window.innerHeight;
         let revealTop = sections[i].getBoundingClientRect().top;
@@ -235,6 +235,14 @@ function showProjects() {
                 let choiceType = choice.getAttribute('proType')
                 if (card.getAttribute('proType').match(choiceType)) {
                     card.classList.add('show')
+                    let tags = document.querySelectorAll('.portfolio .card .details .tags span')
+                    tags.forEach((tag) => {
+                        if (tag.getAttribute('proType').match(choiceType)) {
+                            tag.classList.add('active')
+                        } else {
+                            tag.classList.remove('active')
+                        }
+                    })
                 } else {
                     card.classList.remove('show')
                 }
