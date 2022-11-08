@@ -6,6 +6,10 @@
         overflow-x: hidden;
     }
 
+    .html.projects .sectionContent .column {
+        width: 50%;
+    }
+
 }
 
 
