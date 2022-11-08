@@ -52,11 +52,11 @@
 } */
 
 /* Second Font */
-/* @font-face {
+@font-face {
     font-family: 'arabic2Font';
     src: url('../fonts/BalooBhaijaan2-VariableFont_wght.ttf');
     font-style: normal
-} */
+}
 
 
 /* ========== Variables ========== */
@@ -127,7 +127,8 @@
 
     /* ========== Typography ========== */
     /* Fonts Familyes */
-    --arabic-font: 'Tajawal', sans-serif;
+    /* --arabic-font: 'Tajawal', sans-serif; */
+    --arabic-font: 'arabic2Font';
     --arabic-font2: 'arabic2Font';
     --english-font: 'englishFont';
 
