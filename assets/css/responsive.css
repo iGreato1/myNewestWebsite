@@ -209,6 +209,15 @@
         justify-content: center;
     }
 
+    .html.projects .sectionContent {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .html.projects .sectionContent .column {
+        width: 100%;
+    }
+
     /* ========== End Section ========== */
 
     /* ========== Flex Class ========== */

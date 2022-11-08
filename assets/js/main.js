@@ -124,7 +124,8 @@ function topArrow() {
             topArrowBtn.classList.remove('show')
         }
     } else {
-        if (window.scrollY > 1750) {
+        // document.querySelector('.portfolio').clientHeight
+        if (1750 < window.scrollY) {
             topArrowBtn.classList.add('show')
         } else {
             topArrowBtn.classList.remove('show')
@@ -155,8 +156,6 @@ function reveal() {
                     nums.forEach((num) => startCount(num))
                 }
                 factsNumsAnimation = true;
-            } else if (sections[i].classList.contains('portfolio')) {
-                topArrowBtn.classList.remove('show')
             }
         } else {
             sections[i].classList.remove('active');

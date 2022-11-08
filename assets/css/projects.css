@@ -1,15 +1,23 @@
+.html.projects .body {
+    min-height: 100vh;
+}
+
+.html.projects .body.flex-center {
+    justify-content: space-between;
+}
+
 .html.projects main.mainContent.flex-center {
     justify-content: flex-start;
 }
 
-.mainContent {
+.html.projects .mainContent {
     text-align: unset;
+    min-height: unset;
 }
 
 .project {
     position: relative;
     width: 100%;
-    min-height: 100vh;
 }
 
 .html.projects .section {
@@ -20,9 +28,6 @@
     margin-bottom: 25px;
 }
 
-.html.projects main.mainContent {
-    text-align: unset;
-}
 
 .html.projects .content .resumeContent {
     margin-bottom: 25px;
@@ -82,4 +87,9 @@
     margin: 15px 0;
     gap: 15px;
     justify-content: flex-start;
+}
+
+.html.projects .sectionContent .column {
+    position: relative;
+    width: 50%;
 }

@@ -19,10 +19,35 @@
 /* Arabic Font */
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
 
-/* Main Font
+/* Main Font */
+/* @font-face {
+    font-family: 'arabicFontELi';
+    src: url('../fonts/Tajawal/Tajawal-ExtraLight.ttf');
+    font-style: normal;
+}
 @font-face {
-    font-family: 'arabicFont';
-    src: url('../fonts/ElMessiri-VariableFont_wght.ttf');
+    font-family: 'arabicFontLi';
+    src: url('../fonts/Tajawal/Tajawal-Light.ttf');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'arabicFontRg';
+    src: url('../fonts/Tajawal/Tajawal-Regular.ttf');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'arabicFontMd';
+    src: url('../fonts/Tajawal/Tajawal-Medium.ttf');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'arabicFontBo';
+    src: url('../fonts/Tajawal/Tajawal-Bold.ttf');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'arabicFontEBo';
+    src: url('../fonts/Tajawal/Tajawal-ExtraBold.ttf');
     font-style: normal;
 } */
 
@@ -361,11 +386,12 @@ html {
 }
 
 .html.light::-webkit-scrollbar-thumb {
-    background: var(--seccondColorLight);
+    /* background: var(--seccondColorLight); */
+    background: transparent;
 }
 
 .html.dark::-webkit-scrollbar-thumb {
-    background: #505050;
+    /* background: #505050; */
 }
 
 .html.light *::selection {
