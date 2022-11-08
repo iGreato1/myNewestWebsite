@@ -68,7 +68,10 @@
                     <div class="icon">
                         <ion-icon name="home-outline"></ion-icon>
                     </div>
-                    <div class="title">Home</div>
+                    <div class="title">
+                        <p class="english">Home</p>
+                        <p class="arabic">الرئيسية</p>
+                    </div>
                 </a>
             </li>
             <li class="flex-center">
@@ -76,7 +79,10 @@
                     <div class="icon">
                         <ion-icon name="person-outline"></ion-icon>
                     </div>
-                    <div class="title">About</div>
+                    <div class="title">
+                        <p class="english">About</p>
+                        <p class="arabic">من انا</p>
+                    </div>
                 </a>
             </li>
             <li class="flex-center">
@@ -84,7 +90,10 @@
                     <div class="icon">
                         <ion-icon name="reader-outline"></ion-icon>
                     </div>
-                    <div class="title">Resume</div>
+                    <div class="title">
+                        <p class="english">Resume</p>
+                        <p class="arabic">ملخص عام</p>
+                    </div>
                 </a>
             </li>
             <li class="flex-center">
@@ -92,7 +101,10 @@
                     <div class="icon">
                         <ion-icon name="medal-outline"></ion-icon>
                     </div>
-                    <div class="title">Facts</div>
+                    <div class="title">
+                        <p class="english">Facts</p>
+                        <p class="arabic">احصائياتي</p>
+                    </div>
                 </a>
             </li>
             <li class="flex-center">
@@ -100,7 +112,10 @@
                     <div class="icon">
                         <ion-icon name="grid-outline"></ion-icon>
                     </div>
-                    <div class="title">Services</div>
+                    <div class="title">
+                        <p class="english">Services</p>
+                        <p class="arabic">خدماتي</p>
+                    </div>
                 </a>
             </li>
             </li>
@@ -109,7 +124,10 @@
                     <div class="icon">
                         <ion-icon name="images-outline"></ion-icon>
                     </div>
-                    <div class="title">Portfolio</div>
+                    <div class="title">
+                        <p class="english">Portfolio</p>
+                        <p class="arabic">ملف اعمالي</p>
+                    </div>
                 </a>
             </li>
             <li class="flex-center" id="settingsBtn">
@@ -117,20 +135,27 @@
                     <ion-icon name="settings-outline"></ion-icon>
                 </div>
                 <div class="title">
-                    <p>Settings</p>
+                    <p class="english">Settings</p>
+                    <p class="arabic">الاعدادات</p>
                 </div>
             </li>
             <li class="flex-center" id="languageBtn">
                 <div class="icon">
                     <ion-icon name="language-outline"></ion-icon>
                 </div>
-                <div class="title">Language</div>
+                <div class="title">
+                    <p class="english">Language</p>
+                    <p class="arabic">اللغة</p>
+                </div>
             </li>
             <li class="flex-center" id="moodBtn">
                 <div class="icon">
                     <ion-icon name="moon-outline"></ion-icon>
                 </div>
-                <div class="title">Mood</div>
+                <div class="title">
+                    <p class="english">Mood</p>
+                    <p class="arabic">المظهر</p>
+                </div>
             </li>
         </ul>
     </div>
@@ -240,11 +265,22 @@
                 `
                 let column2 = `
                     <div class="column column2 flex-center">
-                        <img src="../../imgs/portfolioProjects/project1.svg" alt="">
+                        <div class="img">
+                            <img src="../../imgs/portfolioProjects/eqla3TechProjShowenLight.png" alt="" class="light">
+                            <img src="../../imgs/portfolioProjects/eqla3TechProjShowenDark.png" alt="" class="dark">
+                            <img src="../../imgs/portfolioProjects/shapeLight.svg" alt="" class="shape light">
+                            <img src="../../imgs/portfolioProjects/shapeDark.svg" alt="" class="shape dark">
+                        </div>
                     </div>
                 `
             </script>
             <div class="sectionInfo">
+                <div class="english backBtn" onclick="history.back()">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                </div>
+                <div class="arabic backBtn" onclick="history.back()">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </div>
                 <div class="title">
                     <p class="english">Eqla3 Tech</p>
                     <p class="arabic">اقلاع تيك</p>

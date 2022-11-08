@@ -197,6 +197,7 @@
 
 /* ---------- Section Title ---------- */
 .sectionInfo {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -232,6 +233,45 @@
 
 .html.dark .sectionInfo .title {
     color: var(--firstTyColorDark);
+}
+
+/* Back Button */
+.sectionInfo .backBtn {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    top: 50%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-30%);
+    border-radius: 10px;
+    transition: .5s all ease-in-out;
+    cursor: pointer;
+}
+
+.html.arabic .sectionInfo .backBtn {
+    right: 0;
+}
+
+.html.english .sectionInfo .backBtn.arabic {
+    opacity: 0;
+}
+
+.html.arabic .sectionInfo .backBtn.english {
+    opacity: 0;
+}
+
+/* -- Section Title Mood -- */
+.html.light .sectionInfo .backBtn {
+    color: var(--seccondTyColorLight);
+    box-shadow: var(--neumBtn-Dots-Light);
+}
+
+.html.dark .sectionInfo .backBtn {
+    color: var(--seccondTyColorDark);
+    box-shadow: var(--neumBtn-Dots-Dark);
 }
 
 /* ---------- Section Title Shape ---------- */
@@ -938,6 +978,7 @@ html.dark .nav ul li {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    text-align: start;
 }
 
 .html.arabic .about .demoInfo .row {
@@ -1434,18 +1475,18 @@ html.dark .nav ul li {
 }
 
 .html.dark .services .service {
-    background: var(--footerAndIconsColorDark);
-    box-shadow: var(--neumBtn-Bigest-Dark);
+    /* background: var(--footerAndIconsColorDark); */
+    box-shadow: var(--neumBtn-Big-Dark);
 }
 
 .html.light .services .service:hover {
     background: var(--footerAndIconsColorLight);
-    box-shadow: var(--neumBtnHover-Bigest-Light);
+    box-shadow: var(--neumBtnHover-Big-Light);
 }
 
 .html.dark .services .service:hover {
     background: var(--footerAndIconsColorDark);
-    box-shadow: var(--neumBtnHover-Bigest-Dark);
+    box-shadow: var(--neumBtnHover-Big-Dark);
 }
 
 .service .img {
@@ -1591,6 +1632,7 @@ html.dark .nav ul li {
     position: absolute;
     transform: 0;
     width: 600px;
+    height: 325px;
     border-radius: 15px;
     box-shadow: var(--neumBtn-Big-Light);
     background: var(--footerAndIconsColorLight);
@@ -1628,8 +1670,37 @@ html.dark .nav ul li {
 }
 
 .portfolio .sectionContent .card .img img {
+    position: absolute;
     width: 100%;
+    height: 100%;
+    left: 0;
     border-radius: 15px;
+    transition: .5s all ease-in-out;
+}
+
+
+.html.light .sectionContent .card .img img.light {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+
+.html.light .sectionContent .card .img img.dark {
+    transform: scale(0);
+    opacity: 0;
+    z-index: 0;
+}
+
+.html.dark .sectionContent .card .img img.light {
+    transform: scale(0);
+    opacity: 0;
+    z-index: 0;
+}
+
+.html.dark .sectionContent .card .img img.dark {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 1;
 }
 
 .portfolio .sectionContent .card .details {
@@ -1647,6 +1718,7 @@ html.dark .nav ul li {
     color: var(--Neumorphism1ColorLight);
     background: linear-gradient(0deg, rgba(0, 0, 0, .65) 5%, transparent 95%);
     transition: .5s all ease-in-out;
+    z-index: 1;
 }
 
 .portfolio .sectionContent .card:hover .details {
@@ -1687,7 +1759,7 @@ html.dark .nav ul li {
 .footer {
     position: relative;
     width: 100%;
-    /* z-index: -99; */
+    z-index: 10;
     transition: .5s all ease-in-out;
 }
 
@@ -1738,15 +1810,15 @@ html.dark .nav ul li {
 }
 
 .html.light .social a {
-    color: var(--firstTyColorLight);
-    background: var(--footerIconsColorLight);
-    box-shadow: var(--neumBtn-footerIcons-Light);
+    color: var(--seccondTyColorLight);
+    background: var(--footerAndIconsColorLight);
+    box-shadow: var(--neumBtn-Dots-Light);
 }
 
 .html.dark .social a {
-    color: var(--firstTyColorDark);
-    background: var(--footerIconsColorDark);
-    box-shadow: var(--neumBtn-footerIcons-Dark);
+    color: var(--seccondTyColorDark);
+    background: var(--footerAndIconsColorDark);
+    box-shadow: var(--neumBtn-Dots-Dark);
 }
 
 .html.light .social a:hover {
