@@ -1,12 +1,23 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .html.projects .body {
     min-height: 100vh;
 }
 
 .html.projects .body.flex-center {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .html.projects main.mainContent.flex-center {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
 }
 
@@ -34,7 +45,11 @@
 }
 
 .html.projects .content .resumeContent .personalInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 10px;
 }
@@ -52,13 +67,20 @@
 .html.projects .content .resumeContent.projectOwner .social.flex-center {}
 
 .html.projects .content .resumeContent .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 5%;
 }
 
 @media only screen and (max-width: 768px) {
     .html.projects .content .resumeContent .flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         gap: 0%;
     }
@@ -79,11 +101,13 @@
 }
 
 .html.light.projects .content .resumeContent .shape {
+    -webkit-box-shadow: var(--neumBtn-Small-Light);
     box-shadow: var(--neumBtn-Small-Light);
     background: var(--footerAndIconsColorLight);
 }
 
 .html.dark.projects .content .resumeContent .shape {
+    -webkit-box-shadow: var(--neumBtn-Small-Dark);
     box-shadow: var(--neumBtn-Small-Dark);
     background: var(--footerAndIconsColorDark);
 }
@@ -92,6 +116,8 @@
     width: 100%;
     margin: 15px 0;
     gap: 15px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
 }
 
@@ -139,6 +165,8 @@
     height: 100%;
     left: 0;
     border-radius: 15px;
+    -webkit-transition: .5s all ease-in-out;
+    -o-transition: .5s all ease-in-out;
     transition: .5s all ease-in-out;
 }
 
@@ -149,24 +177,32 @@
 }
 
 .html.light.projects .sectionContent .column .img img.light {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
     transform: scale(1);
     opacity: 1;
     z-index: 1;
 }
 
 .html.light.projects .sectionContent .column .img img.dark {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
     transform: scale(0);
     opacity: 0;
     z-index: 0;
 }
 
 .html.dark.projects .sectionContent .column .img img.light {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
     transform: scale(0);
     opacity: 0;
     z-index: 0;
 }
 
 .html.dark.projects .sectionContent .column .img img.dark {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
     transform: scale(1);
     opacity: 1;
     z-index: 1;
