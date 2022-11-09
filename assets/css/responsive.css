@@ -260,7 +260,7 @@
     }
 
     .html.projects .footer .sectionContent {
-        gap: unset;
+        gap: 17px;
     }
 
     .html.projects .sectionContent .column {

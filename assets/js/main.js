@@ -254,8 +254,6 @@ showProjects()
 function projectsColumns(column1, column2) {
     let parent = document.getElementById('Content')
     if (window.innerWidth < 1024) {
-        console.log('phone')
-        console.log(parent)
         document.getElementById('Content').innerHTML = column2 + column1
     } else {
         document.getElementById('Content').innerHTML = column1 + column2

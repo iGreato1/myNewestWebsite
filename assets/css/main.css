@@ -461,6 +461,15 @@ p.arabic {
     display: block;
 }
 
+.Msg {
+    margin: 15px 0;
+    color: var(--thirdTyColorLight);
+}
+
+.html.dark .Msg {
+    color: var(--thirdTyColorDark);
+}
+
 /* ========== End Global Class ========== */
 
 
@@ -1748,13 +1757,11 @@ html.dark .nav ul li {
 }
 
 .html.light .services .service:hover {
-    background: var(--footerAndIconsColorLight);
     -webkit-box-shadow: var(--neumBtnHover-Big-Light);
     box-shadow: var(--neumBtnHover-Big-Light);
 }
 
 .html.dark .services .service:hover {
-    background: var(--footerAndIconsColorDark);
     -webkit-box-shadow: var(--neumBtnHover-Big-Dark);
     box-shadow: var(--neumBtnHover-Big-Dark);
 }
@@ -1848,6 +1855,10 @@ html.dark .nav ul li {
     margin: 50px auto 0;
 }
 
+.services .servicesMsg .social {
+    margin-top: 10px;
+}
+
 .services .servicesMsg .social a {
     margin: 10px;
 }
@@ -1858,8 +1869,8 @@ html.dark .nav ul li {
     width: 100%;
 }
 
-.portfolio .sectionInfo .title {
-    margin-bottom: 25px;
+.portfolio .sectionInfo .subTitle {
+    margin: 15px 0;
 }
 
 .portfolio .controls {
@@ -2120,11 +2131,11 @@ html.dark .nav ul li {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    gap: 20px;
 }
 
 .footer .social {
     gap: 50px;
-    margin-bottom: 30px;
 }
 
 .social a {
@@ -2232,4 +2243,38 @@ html.dark .nav ul li {
 
 .html.dark .footer .sectionContent p a {
     color: var(--firstTyColorDark);
+}
+
+.footer .footerPagesContainer {
+    display: flex;
+    gap: 15px;
+}
+
+.footer .footerPagesContainer a {
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--seccondTyColorLight);
+    box-shadow: var(--neumBtn-Small-Light);
+}
+
+.html.dark .footer .footerPagesContainer a {
+    color: var(--seccondTyColorDark);
+    box-shadow: var(--neumBtn-Small-Dark);
+}
+
+.html.arabic .footer .footerPagesContainer a.arabic {
+    display: block;
+}
+
+.html.arabic .footer .footerPagesContainer a.english {
+    display: none;
+}
+
+.html.english .footer .footerPagesContainer a.arabic {
+    display: none;
+}
+
+.html.english .footer .footerPagesContainer a.english {
+    display: block;
 }
