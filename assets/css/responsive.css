@@ -83,9 +83,6 @@
         --line-height-big: 28px;
         --line-height-normal: 24px;
         --line-height-small: 22px;
-        --weight-medium: 400;
-        --weight-semi-bold: 500;
-        --weight-bold: 600;
         /* ========== End Typography ========== */
     }
 
@@ -236,7 +233,7 @@
     }
 
     .html.dark .sectionInfo .subtitle {
-        color: var(--thirdTyColorDark);
+        color: var(--seccondTyColorDark);
     }
 
     /* ---------- Section Content ---------- */
@@ -859,6 +856,7 @@
     /* ----- FOOTER ----- */
     .footer .social {
         gap: 25px;
+        flex-wrap: wrap;
     }
 
     .footer .sectionContent p {
@@ -886,6 +884,6 @@
     }
 
     .topArrow.show {
-        bottom: 100px;
+        bottom: 50px;
     }
 }

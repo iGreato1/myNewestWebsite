@@ -170,8 +170,14 @@
                         <img src="./assets/imgs/myLogoLetterDark.svg" alt="" class="dark">
                     </div>
                     <div class="homeInfo">
-                        <p>Abdullah Alqahtani</p>
-                        <span class="type"></span>
+                        <div class="name">
+                            <p class="english">Abdullah Alqahtani</p>
+                            <p class="arabic">عبدالله القحطاني</p>
+                        </div>
+                        <div class="description">
+                            <p class="english"><span class="typeEnglish"></span></p>
+                            <p class="arabic"><span class="arabic typeArabic"></span></p>
+                        </div>
                     </div>
                 </div>
                 <div class="shapeBG"></div>
@@ -448,10 +454,12 @@
                             <div class="resumeContent">
                                 <ul>
                                     <li>
-                                        <p class="english"><a href="https://satr.codes/list/courses" target="_blank"
-                                                class="fontBold">Sater platform</a> belonging to Saudi Federation for
+                                        <p class="english"><a href="https://profile.satr.codes/igreato1/public/overview"
+                                                target="_blank" class="fontBold">Sater platform</a> belonging to Saudi
+                                            Federation for
                                             Cyber Security, Programming and Drones</p>
-                                        <p class="arabic">منصة ( <a href="https://satr.codes/list/courses"
+                                        <p class="arabic">منصة ( <a
+                                                href="https://profile.satr.codes/igreato1/public/overview"
                                                 target="_blank" class="fontBold arabic">سطر</a> )
                                             التابعة للاتحاد السعودي للامن السيبراني</p>
                                     </li>
@@ -494,11 +502,13 @@
                             <div class="resumeContent">
                                 <ul>
                                     <li>
-                                        <p class="english"><a href="https://satr.codes/list/courses" target="_blank"
-                                                class="fontBold">Sater platform</a> belonging to Saudi Federation
+                                        <p class="english"><a href="https://profile.satr.codes/igreato1/public/overview"
+                                                target="_blank" class="fontBold">Sater platform</a> belonging to Saudi
+                                            Federation
                                             for
                                             Cyber Security, Programming and Drones</p>
-                                        <p class="arabic">منصة ( <a href="https://satr.codes/list/courses"
+                                        <p class="arabic">منصة ( <a
+                                                href="https://profile.satr.codes/igreato1/public/overview"
                                                 target="_blank" class="fontBold arabic">سطر</a> )
                                             التابعة للاتحاد السعودي للامن السيبراني</p>
                                     </li>
@@ -652,12 +662,12 @@
                 </div>
                 <div class="fact flex-center flex-column">
                     <div class="factIcon flex-center">
-                        <ion-icon name="file-tray-stacked-outline"></ion-icon>
+                        <ion-icon name="happy-outline"></ion-icon>
                     </div>
-                    <div class="factNum numsAnimation" goal="33">0</div>
+                    <div class="factNum numsAnimation" goal="3">0</div>
                     <div class="factName">
-                        <p class="english">Repository on Github</p>
-                        <p class="arabic">مستودع على القيت هب</p>
+                        <p class="english">clients</p>
+                        <p class="arabic">العملاء</p>
                     </div>
                 </div>
                 <div class="fact flex-center flex-column">
@@ -757,7 +767,7 @@
             </div>
             <div class="reveal servicesMsg">
                 <p class="english title">For any service, Please contact me here :</p>
-                <p class="arabic title">لطلب خدمة الرجاء التواصل معي من هنا او عبر حساباتي بالاسفل :</p>
+                <p class="arabic title">لطلب خدمة الرجاء التواصل معي من هنا او عبر حساباتي الموجودة في اسفل الشاشة :</p>
                 <div class="social flex-center">
                     <a href="mailto:info@abdullah-alqahtani.me" target="_blank" class="icon Neum flex-center whatsapp">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -779,11 +789,7 @@
                     <p class="arabic">ملف اعمالي</p>
                     <div></div>
                 </div>
-                <div class="subTitle">
-                    <p class="english">* Portfolio Will Be Updated Periodically *</p>
-                    <p class="arabic">* سيتم تحديث ملف الاعمال بشكل دوري *</p>
-                </div>
-                <div class="controls flex-center">
+                <div class="subTitle controls flex-center">
                     <span class="clicked" proType="all">All</span><span proType="apps">Apps</span><span
                         proType="websites">Websites</span><span proType="ux">Ui-Ux</span><span
                         proType="scripts">Scripts</span>
@@ -847,6 +853,11 @@
                     class="icon Neum flex-center linkedin">
                     <i class="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
+                <a href="https://profile.satr.codes/igreato1/public/overview" target="_blank"
+                    class="icon Neum flex-center SAFCSP">
+                    <img src="./assets/imgs/SAFCSPLogoLight.svg" alt="" class="light">
+                    <img src="./assets/imgs/SAFCSPLogoDark.svg" alt="" class="dark">
+                </a>
                 <a href="https://github.com/iGreato1" target="_blank" class="icon Neum flex-center github">
                     <i class="fa fa-github" aria-hidden="true"></i>
                 </a>
@@ -886,10 +897,19 @@
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/typed.js"></script>
     <script>
-        var typed = new Typed('.type', {
+        var typedEnglish = new Typed('.typeEnglish', {
             strings: [
                 'Front-End Developer',
                 'UI-UX Designer'
+            ],
+            typeSpeed: 60,
+            backSpeed: 60,
+            loop: true
+        });
+        var typedArabic = new Typed('.typeArabic', {
+            strings: [
+                'مبرمج واجهات المواقع الالكترونية',
+                'مصمم تجربة وواجهات المستخدم'
             ],
             typeSpeed: 60,
             backSpeed: 60,

@@ -5,15 +5,8 @@
 * Browsers: last 4 version
 */
 
-/* Google Fonts */
-/* English */
-/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600&display=swap'); */
-/* Arabic */
-/* @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600&display=swap'); */
-
+/* Arabic Font */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
 
 /* Here website fonts */
 /* English Font */
@@ -23,47 +16,6 @@
     font-style: normal
 }
 
-/* Arabic Font */
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
-
-/* Main Font */
-/* @font-face {
-    font-family: 'arabicFontELi';
-    src: url('../fonts/Tajawal/Tajawal-ExtraLight.ttf');
-    font-style: normal;
-}
-@font-face {
-    font-family: 'arabicFontLi';
-    src: url('../fonts/Tajawal/Tajawal-Light.ttf');
-    font-style: normal;
-}
-@font-face {
-    font-family: 'arabicFontRg';
-    src: url('../fonts/Tajawal/Tajawal-Regular.ttf');
-    font-style: normal;
-}
-@font-face {
-    font-family: 'arabicFontMd';
-    src: url('../fonts/Tajawal/Tajawal-Medium.ttf');
-    font-style: normal;
-}
-@font-face {
-    font-family: 'arabicFontBo';
-    src: url('../fonts/Tajawal/Tajawal-Bold.ttf');
-    font-style: normal;
-}
-@font-face {
-    font-family: 'arabicFontEBo';
-    src: url('../fonts/Tajawal/Tajawal-ExtraBold.ttf');
-    font-style: normal;
-} */
-
-/* Second Font */
-/* @font-face {
-    font-family: 'arabic2Font';
-    src: url('../fonts/BalooBhaijaan2-VariableFont_wght.ttf');
-    font-style: normal
-} */
 
 
 /* ========== Variables ========== */
@@ -96,47 +48,45 @@
     /* Btns */
     /* Bigest Size */
     --neumBtn-Bigest-Light: 15px 15px 20px rgb(100 100 100 / 15%), -15px -15px 20px rgb(255 255 255 / 75%);
-    --neumBtn-Bigest-Dark: 15px 15px 25px rgb(3 3 3 / 25%), -15px -15px 25px rgb(125 125 125 / 25%);
+    --neumBtn-Bigest-Dark: 15px 15px 25px rgb(25 25 25 / 25%), -15px -15px 25px rgb(75 75 75 / 25%);
     --neumBtnHover-Bigest-Light: 15px 15px 20px rgb(100 100 100 / 15%) inset, -15px -15px 20px rgb(255 255 255 / 75%) inset;
-    --neumBtnHover-Bigest-Dark: 15px 15px 25px rgb(3 3 3 / 25%) inset, -15px -15px 25px rgb(125 125 125 / 15%) inset;
+    --neumBtnHover-Bigest-Dark: 15px 15px 25px rgb(25 25 25 / 25%) inset, -15px -15px 25px rgb(75 75 75 / 15%) inset;
 
     /* Big Size */
     --neumBtn-Big-Light: 15px 15px 15px rgb(100 100 100 / 15%), -15px -15px 15px rgb(255 255 255 / 75%);
-    --neumBtn-Big-Dark: 12.5px 12.5px 25px rgb(3 3 3 / 25%), -12.5px -12.5px 25px rgb(125 125 125 / 25%);
+    --neumBtn-Big-Dark: 12.5px 12.5px 25px rgb(25 25 25 / 25%), -12.5px -12.5px 25px rgb(75 75 75 / 25%);
     --neumBtnHover-Big-Light: 15px 15px 15px rgb(100 100 100 / 15%) inset, -15px -15px 15px rgb(255 255 255 / 75%) inset;
-    --neumBtnHover-Big-Dark: 12.5px 12.5px 25px rgb(3 3 3 / 25%) inset, -12.5px -12.5px 25px rgb(125 125 125 / 25%) inset;
+    --neumBtnHover-Big-Dark: 12.5px 12.5px 25px rgb(25 25 25 / 25%) inset, -12.5px -12.5px 25px rgb(75 75 75 / 25%) inset;
 
     /* Medium Size */
     --neumBtn-Medium-Light: 7.5px 7.5px 10px rgb(100 100 100 / 15%), -7.5px -7.5px 10px rgb(255 255 255 / 75%);
-    --neumBtn-Medium-Dark: 7.5px 7.5px 12.5px rgb(3 3 3 / 25%), -7.5px -7.5px 12.5px rgb(125 125 125 / 25%);
+    --neumBtn-Medium-Dark: 7.5px 7.5px 12.5px rgb(25 25 25 / 25%), -7.5px -7.5px 12.5px rgb(75 75 75 / 25%);
     --neumBtnHover-Medium-Light: 7.5px 7.5px 10px rgb(100 100 100 / 15%) inset, -7.5px -7.5px 10px rgb(255 255 255 / 75%) inset;
-    --neumBtnHover-Medium-Dark: 7.5px 7.5px 10px rgb(3 3 3 / 30%) inset, -7.5px -7.5px 10px rgb(125 125 125 / 15%) inset;
+    --neumBtnHover-Medium-Dark: 7.5px 7.5px 10px rgb(25 25 25 / 25%) inset, -7.5px -7.5px 10px rgb(75 75 75 / 25%) inset;
 
     /* Small Size */
     --neumBtn-Small-Light: 5px 5px 10px rgb(100 100 100 / 15%), -5px -5px 10px rgb(255 255 255 / 75%);
-    --neumBtn-Small-Dark: 5px 5px 10px rgb(3 3 3 / 30%), -5px -5px 10px rgb(125 125 125 / 20%);
+    --neumBtn-Small-Dark: 5px 5px 10px rgb(25 25 25 / 25%), -5px -5px 10px rgb(75 75 75 / 25%);
     --neumBtnHover-Small-Light: 5px 5px 7.5px rgb(100 100 100 / 20%) inset, -5px -5px 7.5px rgb(255 255 255 / 75%) inset;
-    --neumBtnHover-Small-Dark: 5px 5px 7.5px rgb(3 3 3 / 30%) inset, -5px -5px 5px rgb(125 125 125 / 20%) inset;
+    --neumBtnHover-Small-Dark: 5px 5px 7.5px rgb(25 25 25 / 25%) inset, -5px -5px 5px rgb(75 75 75 / 25%) inset;
 
     /* Home Shape */
     --neumBtn-homeShape-Light: 20px 20px 50px rgb(100 100 100 / 15%), -20px -20px 50px rgb(255 255 255 / 100%);
     --neumBtn-homeShape-Dark: 20px 20px 50px #2b2b2b, -20px -20px 50px #3b3b3b;
 
     /* Footer Icons Size */
-    --neumBtn-footerIcons-Light: 5px 5px 10px rgb(100 100 100 / 15%), -5px -5px 10px rgb(255 255 255 / 75%);
-    --neumBtn-footerIcons-Dark: 5px 5px 10px rgb(3 3 3 / 20%), -5px -5px 15px rgb(200 200 200 / 25%);
+    --neumBtn-footerIcons-Light: 5px 5px 10px rgb(100 100 100 / 15%), -2.5px -2.5px 7.5px rgb(255 255 255 / 75%);
+    --neumBtn-footerIcons-Dark: 5px 5px 10px rgb(25 25 25 / 25%), -2.5px -2.5px 7.5px rgb(125 125 125 / 25%);
 
     /* Dots Size */
     --neumBtn-Dots-Light: 5px 5px 10px rgb(100 100 100 / 15%), -2.5px -2.5px 7.5px rgb(255 255 255 / 75%);
-    --neumBtn-Dots-Dark: 5px 5px 10px rgb(3 3 3 / 25%), -2.5px -2.5px 7.5px rgb(125 125 125 / 25%);
+    --neumBtn-Dots-Dark: 5px 5px 10px rgb(25 25 25 / 25%), -2.5px -2.5px 7.5px rgb(75 75 75 / 25%);
     /* ========== End Neum Shadows ========== */
 
 
     /* ========== Typography ========== */
     /* Fonts Familyes */
     --arabic-font: 'Tajawal', sans-serif;
-    /* --arabic-font: 'arabic2Font'; */
-    /* --arabic-font2: 'arabic2Font'; */
     --english-font: 'englishFont';
 
     /* Colors : */
@@ -437,12 +387,15 @@
     color: var(--firstTyColorDark);
 }
 
-p.english {
+p.english,
+.english {
     font-family: var(--english-font);
 }
 
-p.arabic {
+p.arabic,
+.arabic {
     font-family: var(--arabic-font);
+    direction: rtl;
 }
 
 .html.english p.english {
@@ -500,12 +453,12 @@ html {
 }
 
 .html.light::-webkit-scrollbar-thumb {
-    /* background: var(--seccondColorLight); */
+    background: var(--seccondColorLight);
     background: transparent;
 }
 
 .html.dark::-webkit-scrollbar-thumb {
-    /* background: #505050; */
+    background: #505050;
 }
 
 .html.light *::-moz-selection {
@@ -567,7 +520,7 @@ html {
 
 .html.dark .topArrow {
     color: var(--firstTyColorDark);
-    background: var(--footerAndIconsColorDark);
+    background: var(--mainColorDark);
     -webkit-box-shadow: var(--neumBtn-Medium-Dark);
     box-shadow: var(--neumBtn-Medium-Dark);
 }
@@ -581,13 +534,12 @@ html {
 
 .html.dark .topArrow:hover {
     color: var(--firstTyColorDark);
-    background: var(--footerAndIconsColorDark);
     -webkit-box-shadow: var(--neumBtnHover-Medium-Dark);
     box-shadow: var(--neumBtnHover-Medium-Dark);
 }
 
 .topArrow.show {
-    bottom: 225px;
+    bottom: 150px;
     opacity: 1;
 }
 
@@ -680,9 +632,9 @@ html.light .nav ul li {
     box-shadow: var(--neumBtn-Medium-Light);
 }
 
-html.dark .nav ul li {
+.html.dark .nav ul li {
     color: var(--firstTyColorDark);
-    background: var(--footerAndIconsColorDark);
+    background: var(--mainColorDark);
     -webkit-box-shadow: var(--neumBtn-Medium-Dark);
     box-shadow: var(--neumBtn-Medium-Dark);
 }
@@ -1042,10 +994,13 @@ html.dark .nav ul li {
     text-align: center;
     font-size: var(--h2-size);
     color: var(--firstTyColorLight);
-    line-height: 35px;
     -webkit-transition: .5s all ease-in-out;
     -o-transition: .5s all ease-in-out;
     transition: .5s all ease-in-out;
+}
+
+.homeSectionContent .shape .homeInfo .name {
+    margin: 8px 0 1px;
 }
 
 .homeSectionContent .shape .homeInfo span {
@@ -1228,7 +1183,6 @@ html.dark .nav ul li {
 }
 
 .html.dark .demoInfo .row .square {
-    background: var(--footerAndIconsColorDark);
     -webkit-box-shadow: var(--neumBtn-Dots-Dark);
     box-shadow: var(--neumBtn-Dots-Dark);
 }
@@ -1541,7 +1495,6 @@ html.dark .nav ul li {
 
 .html.dark .resume .content .shape {
     color: var(--seccondTyColorDark);
-    background: var(--footerAndIconsColorDark);
     -webkit-box-shadow: var(--neumBtn-Medium-Dark);
     box-shadow: var(--neumBtn-Medium-Dark);
 }
@@ -1683,7 +1636,6 @@ html.dark .nav ul li {
 
 .html.dark .facts .factIcon {
     color: var(--firstTyColorDark);
-    background: var(--footerAndIconsColorDark);
     -webkit-box-shadow: var(--neumBtn-Medium-Dark);
     box-shadow: var(--neumBtn-Medium-Dark);
 }
@@ -1751,7 +1703,6 @@ html.dark .nav ul li {
 }
 
 .html.dark .services .service {
-    /* background: var(--footerAndIconsColorDark); */
     -webkit-box-shadow: var(--neumBtn-Big-Dark);
     box-shadow: var(--neumBtn-Big-Dark);
 }
@@ -1964,7 +1915,6 @@ html.dark .nav ul li {
 .html.dark .portfolio .sectionContent .card {
     -webkit-box-shadow: var(--neumBtn-Big-Dark);
     box-shadow: var(--neumBtn-Big-Dark);
-    background: var(--footerAndIconsColorDark);
 }
 
 .portfolio .sectionContent .card:hover {
@@ -2132,13 +2082,53 @@ html.dark .nav ul li {
     -ms-flex-align: center;
     align-items: center;
     gap: 20px;
+    padding: 0 10px;
 }
 
 .footer .social {
     gap: 50px;
 }
 
+.footer .social img {
+    position: absolute;
+    width: 55%;
+    transition: .5s all ease-in-out;
+}
+
+.html.light .social img.light {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+
+.html.light .social img.dark {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+    z-index: 0;
+}
+
+.html.dark .social img.light {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+    z-index: 0;
+}
+
+.html.dark .social img.dark {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+
 .social a {
+    position: relative;
     width: 50px;
     height: 50px;
     border-radius: 12.5px;
@@ -2165,14 +2155,14 @@ html.dark .nav ul li {
     color: var(--seccondTyColorLight);
     background: var(--footerAndIconsColorLight);
     -webkit-box-shadow: var(--neumBtn-Dots-Light);
-    box-shadow: var(--neumBtn-Dots-Light);
+    box-shadow: var(--neumBtn-footerIcons-Light);
 }
 
 .html.dark .social a {
     color: var(--seccondTyColorDark);
     background: var(--footerAndIconsColorDark);
     -webkit-box-shadow: var(--neumBtn-Dots-Dark);
-    box-shadow: var(--neumBtn-Dots-Dark);
+    box-shadow: var(--neumBtn-footerIcons-Dark);
 }
 
 .html.light .social a:hover {
@@ -2188,6 +2178,10 @@ html.dark .nav ul li {
 .social a.linkedin:hover {
     background: #0072b1;
     color: var(--mainColorLight);
+}
+
+.social a.SAFCSP:hover {
+    background: #00adbb;
 }
 
 .social a.github:hover {
