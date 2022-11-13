@@ -36,9 +36,14 @@
 }
 
 .html.projects .sectionInfo {
-    margin-bottom: 25px;
+    margin-bottom: 75px;
 }
 
+@media only screen and (max-width: 1024px) {
+    .html.projects .sectionInfo {
+        margin-bottom: 25px;
+    }
+}
 
 .html.projects .content .resumeContent {
     margin-bottom: 25px;
@@ -87,7 +92,7 @@
 }
 
 .html.projects .content .resumeContent .flex .subContent {
-    margin: 15px 0;
+    margin: 15px 0 0;
 }
 
 .html.projects .content .title {

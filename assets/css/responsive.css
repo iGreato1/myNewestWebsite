@@ -106,6 +106,10 @@
         transition: .5s all ease-in-out;
     }
 
+    .html.projects .section {
+        padding: 75px 0 0;
+    }
+
     .section.active {
         -webkit-transform: translateY(0px);
         -ms-transform: translateY(0px);
